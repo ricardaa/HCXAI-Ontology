@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:survey="http://www.semanticweb.org/ontologies/survey#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/survey"/>
@@ -29,6 +30,18 @@
     <!-- http://purl.org/vocab/vann/usageNote -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
@@ -138,12 +151,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/rontologies/xai#hasDecisionBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rontologies/xai#hasDecisionBoundary">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
         <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyCompletionTask"/>
         <rdfs:range rdf:resource="https://w3id.org/survey-ontology#Participant"/>
         <vann:usageNote>Property linking a survey completion task to the participant performing it.</vann:usageNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#hasInputData -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasInputData">
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
+        <rdfs:label>has input data</rdfs:label>
+        <skos:prefLabel>has input data</skos:prefLabel>
     </owl:ObjectProperty>
     
 
@@ -305,6 +339,12 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>Explanation</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000602 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000602"/>
     
 
 
@@ -529,6 +569,55 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/survey#WhyNot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/survey#QuestionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#GlobalDecisionBoundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalDecisionBoundary">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#LocalDecisionBoundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#LocalDecisionBoundary">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#DecisionBoundary -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#DecisionBoundary">
+        <rdfs:comment>The decision boundary or scope of a XAI approach refers to the extent or range of what it encompasses or covers.</rdfs:comment>
+        <rdfs:label>Decision boundary</rdfs:label>
+        <skos:prefLabel>Decision boundary</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#ExplanationAlgorithm -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#InputData -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#InputData"/>
+    
+
+
+    <!-- https://purl.org/heals/eo#SystemRecommendation -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#SystemRecommendation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
+        <rdfs:label>System Recommendation</rdfs:label>
+        <skos:definition>an output of an AI system that stitches together the system&apos;s output from tasks and/or includes external knowledge used by the task (s)</skos:definition>
     </owl:Class>
     
 
@@ -1248,6 +1337,22 @@ Thank you for your support!</sur:hasText>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/survey#41-50Years">
         <sur:hasPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</sur:hasPoints>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Global -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#Global">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#GlobalDecisionBoundary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Local -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#Local">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#LocalDecisionBoundary"/>
     </owl:NamedIndividual>
     
 
