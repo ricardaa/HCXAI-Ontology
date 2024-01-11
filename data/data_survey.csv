@@ -1,0 +1,51 @@
+lfdn;why_local;why_not_local;how_local;what_else_local;why_global;how_global;why_not_global;how_to_global;what_if_global;att_ai_01;att_ai_02;att_ai_03;att_ai_04;att_ai_05;att_ai_06;tech_aff_01;tech_aff_02;tech_aff_03;tech_aff_04;use_apply_ai_01;use_apply_ai_02;know_un_ai_01;know_un_ai_02;know_un_ai_03;know_un_ai_04;detect_ai_01;detect_ai_02;ethics_ai_01;ethics_ai_02;create_ai_01;create_ai_02;age;gender;education;job_title;job_groups
+44;6;7;4;7;7;7;6;4;6;5;5;5;5;7;7;3;5;5;3;5;5;5;5;5;2;5;5;3;2;2;2;3;2;3;Project manager;User
+42;6;5;2;3;6;2;7;4;5;5;4;6;6;6;4;3;5;3;6;3;3;2;4;4;5;4;5;5;2;1;1;2;2;3;Consultant in project accounting;User
+50;4;6;2;3;6;5;6;5;6;6;6;7;7;3;4;6;6;5;2;6;6;5;4;5;6;4;4;3;2;5;6;2;1;4;phd candidate in software engineering;Developer
+52;7;5;1;5;6;2;5;5;2;5;6;6;6;5;5;5;5;5;3;3;4;5;4;2;4;3;3;3;4;2;2;4;1;4;Consultant (Technology transfer and innovation);User
+54;6;5;3;3;6;5;7;3;5;6;5;5;6;2;3;7;7;6;1;6;6;5;5;5;6;5;4;5;3;6;6;3;2;5;Data scientist;Developer
+60;6;3;2;5;7;5;6;6;5;5;7;7;7;3;4;3;3;3;5;5;5;2;2;2;3;3;5;3;2;1;1;3;2;4;Organisational Development;User
+63;7;5;1;2;6;5;5;6;4;3;6;7;6;5;5;6;6;7;2;6;7;6;6;6;5;6;5;5;3;3;6;2;1;3;Researcher at ICT and Automation;Theorist
+64;2;6;3;2;5;3;6;2;6;4;5;5;6;6;6;6;7;6;1;3;4;5;5;4;6;5;5;6;4;4;2;4;1;4;manufacturng engineer;User
+66;6;2;3;5;6;5;6;5;5;7;6;7;6;6;5;7;7;5;2;6;6;5;5;5;6;5;4;5;5;6;6;3;1;5;Researcher;Theorist
+68;7;7;7;7;7;6;6;5;5;7;7;7;7;5;4;7;5;6;2;7;7;5;5;5;5;5;4;6;6;6;6;2;2;4;-99;User
+71;5;5;2;6;6;4;6;5;6;6;6;6;6;4;3;6;6;6;3;6;6;3;4;5;4;3;3;4;3;2;2;4;2;3;International Funds Manager;User
+70;6;6;1;6;6;6;5;5;3;5;6;6;6;6;3;6;6;6;2;5;5;6;6;6;5;5;7;6;5;7;7;2;1;4;researcher and developer;Developer
+74;7;6;1;5;7;2;7;1;1;7;7;7;7;6;4;7;5;6;2;7;7;7;6;6;6;5;7;6;5;5;5;4;1;4;Researcher and Senior Software Engineer;Developer
+76;7;6;1;6;6;2;5;2;3;4;5;5;6;5;5;4;4;3;6;6;5;6;5;5;4;4;3;4;4;6;6;3;2;4;Data analyst;Developer
+77;6;3;1;6;7;2;5;2;6;5;6;5;6;6;6;5;6;4;3;6;5;4;5;5;2;3;6;2;1;2;3;2;2;4;Researcher and Software Developer;Developer
+81;6;6;3;4;6;3;5;3;6;3;5;4;6;4;4;6;5;5;4;2;2;2;2;2;4;3;4;3;3;1;1;3;1;3;Food Manufacturing Development Technician;User
+82;3;3;6;7;4;5;4;4;3;6;7;6;7;6;4;4;6;5;3;6;6;6;5;5;6;5;4;5;4;2;4;3;1;2;-99;User
+83;6;7;5;2;6;2;6;6;4;3;4;4;4;4;5;6;5;4;3;3;3;4;3;2;4;4;4;3;3;3;2;3;2;4;process engineer;User
+85;6;6;4;6;7;3;5;5;6;3;5;4;5;2;3;5;4;4;5;3;2;2;3;4;4;3;4;3;3;1;1;2;2;3;HR manager;User
+86;7;5;1;5;6;5;5;3;6;7;7;7;7;7;7;7;7;7;1;7;7;7;7;7;6;6;5;6;6;5;5;6;1;4;Area Manager;User
+88;3;5;6;6;5;6;5;5;5;6;0;0;0;0;0;5;5;5;3;6;6;6;5;5;4;6;6;6;6;5;5;2;2;3;administrative;User
+89;3;6;3;3;6;2;6;4;3;5;5;4;5;6;5;6;7;6;2;5;5;5;4;6;6;4;3;5;4;5;4;3;1;4;Food process developer;User
+90;6;7;4;6;6;3;6;4;6;6;7;6;6;6;5;6;5;5;4;6;6;6;6;6;6;5;4;6;5;6;6;2;2;4;PhD candidate in Data Science;Theorist
+91;3;5;2;6;6;2;5;6;6;5;5;6;6;2;2;6;5;5;3;5;5;4;4;3;5;4;4;3;4;2;2;4;1;3;Mechanical engineering constructor;User
+92;3;6;5;4;6;4;5;4;5;6;6;5;6;5;5;5;5;5;4;5;5;6;6;5;6;5;5;4;5;6;6;2;1;4;Data Scientist;Developer
+93;6;6;3;5;6;2;5;4;5;5;5;5;4;3;4;3;4;4;5;4;4;3;2;4;5;4;4;3;4;2;2;3;1;3;Projection organization manager;User
+94;6;6;2;6;5;5;5;4;6;6;6;6;5;4;4;4;5;5;3;6;5;6;6;6;6;5;5;4;6;6;7;2;1;4;ML Engineer;Developer
+95;7;4;1;7;7;1;3;2;1;4;6;7;6;4;6;6;5;5;2;2;1;4;5;5;4;3;6;4;4;2;5;5;1;3;data analyst;Developer
+96;6;7;4;5;6;3;7;5;6;4;5;4;5;5;5;5;3;3;6;4;3;2;2;3;5;4;4;5;5;1;1;2;2;2;Project Consultant;User
+97;6;6;4;6;7;5;6;3;6;6;6;7;7;4;3;6;7;5;2;6;6;4;5;5;6;5;6;6;6;2;2;4;1;4;EU Funding Manager;User
+98;6;6;6;4;7;6;5;6;7;5;6;5;6;6;7;7;7;7;1;5;5;5;6;6;6;5;5;4;5;3;2;3;1;5;Senior Scientist in Robotics and Assistive Systems;Theorist
+99;5;6;2;7;6;2;6;7;3;5;6;6;6;3;7;5;4;3;6;4;5;4;5;5;6;6;6;6;5;1;1;2;1;4;ID & GDPR lawyer;Ethicist
+100;3;6;4;3;5;5;6;7;6;6;7;7;7;5;5;6;6;5;3;5;4;6;5;5;6;5;4;6;3;5;6;3;1;4;Project Leader: Software Development and Testing;Developer
+102;6;7;2;5;6;2;5;3;5;5;6;5;7;6;5;5;6;4;5;4;3;2;3;2;5;5;6;6;5;1;1;2;2;4;PhD Student: Human Factors in Technological Systems;Theorist
+103;7;7;4;7;5;5;7;6;6;6;6;6;6;5;7;5;5;5;7;5;6;2;4;4;7;1;4;4;2;1;1;2;2;4;PhD;Theorist
+104;7;6;2;5;7;5;7;5;6;4;6;6;6;3;3;3;5;5;3;6;4;4;0;6;4;5;5;5;4;1;1;2;2;4;Qualität manager;User
+105;6;7;3;2;6;3;7;5;6;3;6;3;5;6;6;5;5;4;6;4;4;2;2;3;6;5;5;4;2;1;1;2;2;3;Technology Broker;User
+106;6;7;2;5;6;4;6;2;7;6;6;7;7;6;5;7;7;7;2;6;6;6;5;5;6;5;5;2;3;6;6;2;1;4;Project Manager Electrical Engineering;User
+107;3;4;1;5;6;2;5;6;2;7;7;6;7;6;2;6;7;6;2;6;7;7;6;7;7;6;6;6;4;6;6;3;1;3;web designer & frontend developer;Developer
+108;7;7;3;4;5;4;6;7;4;3;5;4;6;6;6;6;5;4;5;4;3;2;3;2;5;5;6;5;5;1;1;3;2;3;HR Specialist: Digital Education;User
+109;3;5;2;3;5;4;6;6;5;6;7;7;6;6;7;6;7;6;2;6;5;7;6;5;6;5;4;5;6;7;6;2;1;4;Software & ML Engineer;Developer
+110;5;6;6;2;5;6;5;7;6;6;5;7;6;6;5;6;5;6;2;6;5;6;6;5;6;5;4;5;2;5;6;2;1;4;Industrial Engineer in Computer Vision;Developer
+111;4;6;2;6;5;3;7;5;4;5;4;4;5;2;2;5;6;5;3;4;3;2;3;2;5;5;5;4;2;2;1;2;2;3;Food Quality Assurance & Regulatory;User
+112;2;6;3;4;6;4;6;7;5;6;7;7;6;5;5;6;0;6;2;6;6;6;6;6;6;5;5;4;4;6;6;2;1;5;PostDoc Researcher in the field of knowledge engineering;Theorist
+113;5;6;1;4;6;3;6;7;3;6;6;6;6;5;5;5;4;6;6;6;5;5;5;5;6;6;6;3;3;5;6;4;1;4;Business Intelligence Developer;Developer
+114;2;4;1;4;5;4;5;6;3;7;7;7;5;6;5;6;5;5;4;6;6;7;7;7;7;6;5;6;3;7;7;4;1;5;Senior ML Engineer;Developer
+115;5;6;4;6;5;6;6;3;6;4;5;6;6;5;5;5;6;5;4;6;6;5;6;6;6;5;5;6;6;2;3;3;2;4;GDPR law consultant;Ethicist
+116;5;6;3;6;4;2;6;5;4;4;6;5;6;6;6;6;5;5;4;4;4;5;5;6;6;5;5;6;4;4;3;2;1;4;Phd candidate in software development;Developer
+117;3;5;1;6;5;2;5;6;4;3;4;5;5;3;3;3;4;3;6;3;3;2;4;4;5;3;4;5;3;1;1;3;2;4;Project Coordinatior and Organisational Developer;User
+118;4;6;2;5;6;3;7;5;4;5;5;6;6;7;6;5;4;4;5;5;4;6;5;5;6;4;4;3;5;5;5;2;2;4;Junior data engineer;Developer
