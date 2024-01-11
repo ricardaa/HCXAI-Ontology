@@ -609,7 +609,7 @@ constituent for its classification.</rdfs:comment>
         <terms:isPartOf>Journal of Computational and Graphical Statistics</terms:isPartOf>
         <terms:source>A. Goldstein, A. Kapelner, J. Bleich, and E. Pitkin, ``Peeking inside the
 black box: Visualizing statistical learning with plots of individual conditional
-expectation,&apos;&apos; J. Comput. Graph. Statist., vol. 24, no. 1, pp. 4465,
+expectation,&apos;&apos; J. Comput. Graph. Statist., vol. 24, no. 1, pp. 4465,
 2015.</terms:source>
     </owl:NamedIndividual>
     
