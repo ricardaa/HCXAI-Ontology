@@ -4,7 +4,6 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:eo="https://purl.org/heals/eo#"
      xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
-     xmlns:exp="http://www.semanticweb.org/ontologies/exp#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sio="http://semanticscience.org/resource/"
