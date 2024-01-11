@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rontologies/xai#"
+     xml:base="http://www.semanticweb.org/rontologies/xai"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:tno="https://ontology.tno.nl/explainability#"
+     xmlns:xai="http://www.semanticweb.org/rontologies/xai#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rontologies/xai"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:domain rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</terms:description>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Part.</terms:description>
+        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</terms:description>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#hasDecisionBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rontologies/xai#hasDecisionBoundary">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#hasFunctioningType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rontologies/xai#hasFunctioningType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#hasOutputFormat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rontologies/xai#hasOutputFormat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#hasExplanationType -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasExplanationType">
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
+        <rdfs:label>has explanation type</rdfs:label>
+        <skos:prefLabel>has explanation type</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#hasInputData -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasInputData">
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
+        <rdfs:label>has input data</rdfs:label>
+        <skos:prefLabel>has input data</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#hasStrategyType -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasStrategyType">
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#StrategyType"/>
+        <rdfs:label>has strategy type</rdfs:label>
+        <skos:prefLabel>has strategy type</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ArchitectureModification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ArchitectureModification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#CounterfactualExplanation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanation">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Examples -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Examples">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#FunctioningType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#FunctioningType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#GlobalDecisionBoundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalDecisionBoundary">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#GlobalSurrogateModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateModel">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ICE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ICE">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Image">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#LIME -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#LIME">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#LRP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#LRP">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#LocalDecisionBoundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#LocalDecisionBoundary">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Meta-Explanation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Meta-Explanation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ModelAgnosticStrategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ModelAgnosticStrategy">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ModelSpecificStrategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ModelSpecificStrategy">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Numerical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Numerical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#OutputFormat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#OutputFormat">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PDP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#PDP">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportance">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Perturbation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Perturbation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticism">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#SHAP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#SHAP">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#StructureLeveraging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#StructureLeveraging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#SurrogateModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#SurrogateModel">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Tabular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Tabular">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Text -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Text">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Textual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Textual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Visual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Visual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#DecisionBoundary -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#DecisionBoundary">
+        <rdfs:comment>The decision boundary or scope of a XAI approach refers to the extent or range of what it encompasses or covers.</rdfs:comment>
+        <rdfs:label>Decision boundary</rdfs:label>
+        <skos:prefLabel>Decision boundary</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#ExampleBased -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExampleBased">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
+        <rdfs:label>Example based</rdfs:label>
+        <skos:prefLabel>Example based</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#ExplanationAlgorithm -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExplanationAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>An explanation algorithm is a particular XAI algorithm that provides an explanation the AI model it&apos;s associated to.</rdfs:comment>
+        <rdfs:label>Explanation algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#ExplanationType -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExplanationType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The explanation type takes the result of an explainability method as the essential 
+constituent for its classification.</rdfs:comment>
+        <rdfs:label>Explanation type</rdfs:label>
+        <skos:prefLabel>Explanation type</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#FeatureAttribution -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#FeatureAttribution">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
+        <rdfs:label>Feature attribution</rdfs:label>
+        <skos:prefLabel>Feature attribution</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#InputData -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#InputData">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Input data</rdfs:label>
+        <skos:prefLabel>Input data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#PostHoc -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#PostHoc">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#StrategyType"/>
+        <rdfs:label>Post hoc</rdfs:label>
+        <skos:prefLabel>Post hoc</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#StrategyType -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#StrategyType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The strategy type refers to how XAI approaches are applied and can be categorized as post-hoc or ante-hoc.</rdfs:comment>
+        <rdfs:label>Strategy type</rdfs:label>
+        <skos:prefLabel>Strategy type</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.tno.nl/explainability#TransparentByDesign -->
+
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#TransparentByDesign">
+        <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#StrategyType"/>
+        <rdfs:label>Transparent by design</rdfs:label>
+        <skos:prefLabel>Transparent by design</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ArchitectureModificationFunctioningType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ArchitectureModificationFunctioningType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ArchitectureModification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#CounterfactualExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanation"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Local"/>
+        <hasFunctioningType rdf:resource="http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#TextualOutputFormat"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#ExampleBasedExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#ImageInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:identifier>https://doi.org/10.48550/arXiv.1711.00399</terms:identifier>
+        <terms:source>Wachter, S., Mittelstadt, B., &amp; Russell, C. (2017). Counterfactual explanations without opening the black box: Automated decisions and the GDPR. Harv. JL &amp; Tech., 31, 841.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ExampleBasedExplanationType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ExampleBasedExplanationType">
+        <rdf:type rdf:resource="https://ontology.tno.nl/explainability#ExampleBased"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ExamplesFunctioningType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ExamplesFunctioningType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Examples"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType">
+        <rdf:type rdf:resource="https://ontology.tno.nl/explainability#FeatureAttribution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Global -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#Global">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#GlobalDecisionBoundary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#GlobalSurrogateExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateModel"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Global"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#SurrogateModelExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:identifier>10.1109/TSMCC.2005.855506</terms:identifier>
+        <terms:isPartOf>IEEE</terms:isPartOf>
+        <terms:source>Zhou, Z., Ong, Y. S., Nair, P. B., Keane, A. J., &amp; Lum, K. Y. (2006). Combining global and local surrogate models to accelerate evolutionary optimization. IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews), 37(1), 66-76.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ICEExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ICEExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ICE"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Local"/>
+        <hasFunctioningType rdf:resource="http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:identifier>10.1080/10618600.2014.907095</terms:identifier>
+        <terms:isPartOf>Journal of Computational and Graphical Statistics</terms:isPartOf>
+        <terms:source>A. Goldstein, A. Kapelner, J. Bleich, and E. Pitkin, ``Peeking inside the
+black box: Visualizing statistical learning with plots of individual conditional
+expectation,&apos;&apos; J. Comput. Graph. Statist., vol. 24, no. 1, pp. 4465,
+2015.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ImageInputData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ImageInputData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#LIMEExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#LIMEExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#LIME"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Local"/>
+        <hasFunctioningType rdf:resource="http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelOutputFormat"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#SurrogateModelExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#ImageInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:identifier>http://dx.doi.org/10.1145/2939672.2939778</terms:identifier>
+        <terms:isPartOf>22nd ACM SIGKDD international conference on knowledge discovery and data mining</terms:isPartOf>
+        <terms:source>Ribeiro, M. T., Singh, S., &amp; Guestrin, C. (2016, August). &quot; Why should i trust you?&quot; Explaining the predictions of any classifier. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining (pp. 1135-1144).</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#LRPExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#LRPExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#LRP"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Local"/>
+        <hasFunctioningType rdf:resource="http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#ImageInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:identifier>https://doi.org/10.1371/journal.pone.0130140</terms:identifier>
+        <terms:isPartOf>PLoS ONE</terms:isPartOf>
+        <terms:source>S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and
+W. Samek, ``On pixel-wise explanations for non-linear classifier decisions
+by layer-wise relevance propagation,&apos;&apos; PLoS ONE, vol. 10, no. 7,
+p. e0130140, 2015.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Local -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#Local">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#LocalDecisionBoundary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#Meta-ExplanationFunctioningType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#Meta-ExplanationFunctioningType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Meta-Explanation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ModelAgnostic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ModelAgnostic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnosticStrategy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ModelOutputFormat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ModelOutputFormat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#ModelSpecific -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ModelSpecific">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelSpecificStrategy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Numerical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PDPExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PDPExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#PDP"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Global"/>
+        <hasFunctioningType rdf:resource="http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:source>Friedman, J. H. (2001). Greedy function approximation: a gradient boosting machine. Annals of statistics, 1189-1232.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportanceExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportanceExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportance"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Global"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:source>Molnar, C., Freiesleben, T., König, G., Herbinger, J., Reisinger, T., Casalicchio, G., ... &amp; Bischl, B. (2023, July). Relating the partial dependence plot and permutation feature importance to the data generating process. In World Conference on Explainable Artificial Intelligence (pp. 456-479). Cham: Springer Nature Switzerland.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Perturbation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PostHoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PostHoc">
+        <rdf:type rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticismExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticismExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticism"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Global"/>
+        <hasFunctioningType rdf:resource="http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#TextualOutputFormat"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat"/>
+        <tno:hasExplanationType rdf:resource="http://www.semanticweb.org/rontologies/xai#ExampleBasedExplanationType"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#ImageInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:isPartOf>Advances in neural information processing systems</terms:isPartOf>
+        <terms:source>Kim, B., Khanna, R., &amp; Koyejo, O. O. (2016). Examples are not enough, learn to criticize! criticism for interpretability. Advances in neural information processing systems, 29.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#SHAPExplanationAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#SHAPExplanationAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#SHAP"/>
+        <hasDecisionBoundary rdf:resource="http://www.semanticweb.org/rontologies/xai#Local"/>
+        <hasFunctioningType rdf:resource="http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#TextualOutputFormat"/>
+        <hasOutputFormat rdf:resource="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#ImageInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TabularInputData"/>
+        <tno:hasInputData rdf:resource="http://www.semanticweb.org/rontologies/xai#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="http://www.semanticweb.org/rontologies/xai#PostHoc"/>
+        <terms:identifier>https://doi.org/10.1145/3531146.3534639</terms:identifier>
+        <terms:isPartOf>Advances in neural information processing  systems</terms:isPartOf>
+        <terms:source>Lundberg, S. M., &amp; Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in neural information processing systems, 30.</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#StructureLeveraging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#SurrogateModelExplanationType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#SurrogateModelExplanationType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#SurrogateModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#TabularInputData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TabularInputData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Tabular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#TextInputData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TextInputData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#TextualOutputFormat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TextualOutputFormat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Textual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#TransparentByDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TransparentByDesign">
+        <rdf:type rdf:resource="https://ontology.tno.nl/explainability#TransparentByDesign"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rontologies/xai#VisualOutputFormat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Visual"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
