@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/ontologies/survey#"
      xml:base="http://www.semanticweb.org/ontologies/survey"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:eo="https://purl.org/heals/eo#"
      xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -14,6 +15,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:survey="http://www.semanticweb.org/ontologies/survey#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/survey"/>
     
@@ -27,6 +29,26 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -1457,6 +1479,8 @@ with the following statements?
 
 I am interested in using artificially 
 intelligent systems in my daily life.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1016/j.chbr.2020.100014</dc:identifier>
+        <dc:source>Schepman, A., &amp; Rodway, P. (2020). Initial validation of the general attitudes towards Artificial Intelligence Scale. Computers in human behavior reports, 1, 100014.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1473,6 +1497,8 @@ with the following statements?
 
 There are many beneficial applications 
 of Artificial Intelligence.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1016/j.chbr.2020.100014</dc:identifier>
+        <dc:source>Schepman, A., &amp; Rodway, P. (2020). Initial validation of the general attitudes towards Artificial Intelligence Scale. Computers in human behavior reports, 1, 100014.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1488,6 +1514,8 @@ of Artificial Intelligence.</sur:hasText>
 with the following statements?
 
 Artificial Intelligence is exciting.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1016/j.chbr.2020.100014</dc:identifier>
+        <dc:source>Schepman, A., &amp; Rodway, P. (2020). Initial validation of the general attitudes towards Artificial Intelligence Scale. Computers in human behavior reports, 1, 100014.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1504,6 +1532,8 @@ with the following statements?
 
 Artificial Intelligence can provide 
 new economic opportunities.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1016/j.chbr.2020.100014</dc:identifier>
+        <dc:source>Schepman, A., &amp; Rodway, P. (2020). Initial validation of the general attitudes towards Artificial Intelligence Scale. Computers in human behavior reports, 1, 100014.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1519,6 +1549,8 @@ new economic opportunities.</sur:hasText>
 with the following statements?
 
 I think Artificial Intelligence is dangerous.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1016/j.chbr.2020.100014</dc:identifier>
+        <dc:source>Schepman, A., &amp; Rodway, P. (2020). Initial validation of the general attitudes towards Artificial Intelligence Scale. Computers in human behavior reports, 1, 100014.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1535,6 +1567,8 @@ with the following statements?
 
 Organizations use Artificial Intelligence 
 unethically.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1016/j.chbr.2020.100014</dc:identifier>
+        <dc:source>Schepman, A., &amp; Rodway, P. (2020). Initial validation of the general attitudes towards Artificial Intelligence Scale. Computers in human behavior reports, 1, 100014.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1543,6 +1577,8 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeAIEthics">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#AIEthics"/>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1559,6 +1595,8 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeApplyAI">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#UseAndApplyAI"/>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1567,6 +1605,8 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeAttAI">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#AttitudeTowardsAI"/>
+        <dc:identifier>https://doi.org/10.1016/j.chbr.2020.100014</dc:identifier>
+        <dc:source>Schepman, A., &amp; Rodway, P. (2020). Initial validation of the general attitudes towards Artificial Intelligence Scale. Computers in human behavior reports, 1, 100014.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1575,6 +1615,8 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeCreateAI">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#CreateAI"/>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1583,6 +1625,8 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeDetectAI">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#DetectAI"/>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1599,6 +1643,7 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeExpertise">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#AIExpertiseAttribute"/>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -1615,6 +1660,8 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeKnowUnAI">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#KnowAndUnderstandAI"/>
+        <dc:identifier>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:identifier>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
     </owl:NamedIndividual>
     
 
@@ -1631,6 +1678,8 @@ unethically.</sur:hasText>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#AttributeTechAff">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/survey#TechnicalAffinity"/>
+        <dc:identifier>https://doi.org/10.1080/10447318.2018.1456150</dc:identifier>
+        <dc:source>Franke, T., Attig, C., &amp; Wessel, D. (2019). A personal resource for technology interaction: development and validation of the affinity for technology interaction (ATI) scale. International Journal of Human–Computer Interaction, 35(6), 456-467.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27486,6 +27535,8 @@ with the following statements?
 
 I can program new applications in the field 
 of Artificial intelligence.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27504,6 +27555,8 @@ I can select useful tools (e.g., frameworks,
 programming languages) to program 
 fundamental components of an Artificial 
 Intelligence.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27520,6 +27573,8 @@ with the following statements?
 
 I can distinguish devices that use Artificial 
 Intelligence from devices that do not.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27535,6 +27590,8 @@ with the following statements?
 
 I can distinguish if I interact with an Artificial 
 Intelligence or a &quot;real human&quot;.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27551,6 +27608,8 @@ with the following statements?
 
 I can weigh the consequences of using 
 Artificial Intelligence for society.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27567,6 +27626,8 @@ with the following statements?
 
 I can analyze Artificial Intelligence-based 
 applications for their ethical implications.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27583,6 +27644,8 @@ with the following statements?
 
 I know the most important concepts of the 
 topic Artificial Intelligence.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27600,6 +27663,8 @@ with the following statements?
 I can assess what the limitations and 
 opportunities of using an Artificial 
 Intelligence are.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27617,6 +27682,8 @@ with the following statements?
 I can assess what advantages and 
 disadvantages the use of an Artificial 
 Intelligence entails.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -27633,6 +27700,8 @@ with the following statements?
 
 I can think of new uses for Artificial 
 Intelligence.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -28158,6 +28227,8 @@ with the following statements?
 
 I like to occupy myself in greater detail 
 with technical systems.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1080/10447318.2018.1456150</dc:identifier>
+        <dc:source>Franke, T., Attig, C., &amp; Wessel, D. (2019). A personal resource for technology interaction: development and validation of the affinity for technology interaction (ATI) scale. International Journal of Human–Computer Interaction, 35(6), 456-467.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -28174,6 +28245,8 @@ with the following statements?
 
 I like testing the functions of new 
 technical systems.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1080/10447318.2018.1456150</dc:identifier>
+        <dc:source>Franke, T., Attig, C., &amp; Wessel, D. (2019). A personal resource for technology interaction: development and validation of the affinity for technology interaction (ATI) scale. International Journal of Human–Computer Interaction, 35(6), 456-467.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -28190,6 +28263,8 @@ with the following statements?
 
 When I have a new technical system in 
 front of me, I try it out intensively.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1080/10447318.2018.1456150</dc:identifier>
+        <dc:source>Franke, T., Attig, C., &amp; Wessel, D. (2019). A personal resource for technology interaction: development and validation of the affinity for technology interaction (ATI) scale. International Journal of Human–Computer Interaction, 35(6), 456-467.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -28206,6 +28281,8 @@ with the following statements?
 
 It is enough for me that a technical 
 system works; I don’t care how or why.</sur:hasText>
+        <dc:identifier>https://doi.org/10.1080/10447318.2018.1456150</dc:identifier>
+        <dc:source>Franke, T., Attig, C., &amp; Wessel, D. (2019). A personal resource for technology interaction: development and validation of the affinity for technology interaction (ATI) scale. International Journal of Human–Computer Interaction, 35(6), 456-467.</dc:source>
     </owl:NamedIndividual>
     
 
@@ -28339,6 +28416,8 @@ with the following statements?
 
 I can use Artificial Intelligence applications 
 to make my everyday life easier.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
@@ -28356,6 +28435,8 @@ with the following statements?
 In everyday life, I can interact with Artificial 
 Intelligence in a way that makes my tasks 
 easier.</sur:hasText>
+        <dc:identifier>https://doi.org/10.48550/arXiv.2302.09319</dc:identifier>
+        <dc:source>Carolus, A., Koch, M., Straka, S., Latoschik, M. E., &amp; Wienrich, C. (2023). MAILS--Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change-and Meta-Competencies</dc:source>
     </owl:NamedIndividual>
     
 
