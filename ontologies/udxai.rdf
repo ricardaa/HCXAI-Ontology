@@ -4,7 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:eo="https://purl.org/heals/eo#"
      xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
-     xmlns:ex="http://www.semanticweb.org/ontologies/exlplainableontology#"
+     xmlns:ex="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/udxai.rdf#"
      xmlns:mlo="http://www.a2rd.net.br/mlo#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -20,11 +20,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:survey="http://www.semanticweb.org/ontologies/survey#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/exlplainableontology">
-        <owl:imports rdf:resource="http://www.semanticweb.org/ontologies/exp"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/ontologies/ml"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/rontologies/xai"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/udxai.rdf"/>
     
 
 
@@ -36,6 +32,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -94,28 +102,28 @@
 
     <!-- http://linkedu.eu/dedalo/explanationPattern.owl#hasCondition -->
 
-    <rdf:Description rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasCondition">
+    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasCondition">
         <rdfs:domain rdf:resource="https://purl.org/heals/eo#user"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanandum -->
 
-    <rdf:Description rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanandum">
+    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanandum">
         <rdfs:domain rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans -->
 
-    <rdf:Description rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans">
+    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans">
         <rdfs:domain rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -133,46 +141,37 @@
 
     <!-- http://www.a2rd.net.br/mlo#canBeSolvedBy -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#canBeSolvedBy">
+    <owl:ObjectProperty rdf:about="http://www.a2rd.net.br/mlo#canBeSolvedBy">
         <rdfs:domain rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#worksFor -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#worksFor">
+    <owl:ObjectProperty rdf:about="http://www.a2rd.net.br/mlo#worksFor">
         <rdfs:domain rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/exlplainableontology#generates -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/exlplainableontology#generates">
-        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-        <rdfs:range rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#hasAttribute -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#hasAttribute">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/exp#hasAttribute">
         <rdfs:domain rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#isCompatibleWith -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#isCompatibleWith">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/ml#isCompatibleWith">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetCharacteristic"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -277,19 +276,19 @@
 
     <!-- http://www.semanticweb.org/rontologies/xai#hasFunctioningType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#hasFunctioningType">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rontologies/xai#hasFunctioningType">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#hasOutputFormat -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#hasOutputFormat">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rontologies/xai#hasOutputFormat">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -316,10 +315,10 @@
 
     <!-- https://ontology.tno.nl/explainability#hasExplanationType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#hasExplanationType">
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasExplanationType">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -337,28 +336,28 @@
 
     <!-- https://ontology.tno.nl/explainability#hasModelType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#hasModelType">
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasModelType">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#ModelType"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://ontology.tno.nl/explainability#hasStrategyType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#hasStrategyType">
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasStrategyType">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#StrategyType"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://ontology.tno.nl/explainability#hasTaskType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#hasTaskType">
+    <owl:ObjectProperty rdf:about="https://ontology.tno.nl/explainability#hasTaskType">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#TaskType"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -374,46 +373,55 @@
 
     <!-- https://purl.org/heals/eo#addresses -->
 
-    <rdf:Description rdf:about="https://purl.org/heals/eo#addresses">
+    <owl:ObjectProperty rdf:about="https://purl.org/heals/eo#addresses">
         <rdfs:domain rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/question"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://purl.org/heals/eo#asks -->
 
-    <rdf:Description rdf:about="https://purl.org/heals/eo#asks">
+    <owl:ObjectProperty rdf:about="https://purl.org/heals/eo#asks">
         <rdfs:domain rdf:resource="https://purl.org/heals/eo#user"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/question"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://purl.org/heals/eo#consumes -->
 
-    <rdf:Description rdf:about="https://purl.org/heals/eo#consumes">
+    <owl:ObjectProperty rdf:about="https://purl.org/heals/eo#consumes">
         <rdfs:domain rdf:resource="https://purl.org/heals/eo#user"/>
         <rdfs:range rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://purl.org/heals/eo#hasPreferenceFor -->
 
-    <rdf:Description rdf:about="https://purl.org/heals/eo#hasPreferenceFor">
+    <owl:ObjectProperty rdf:about="https://purl.org/heals/eo#hasPreferenceFor">
         <rdfs:domain rdf:resource="https://purl.org/heals/eo#user"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://purl.org/heals/eo#hasPresentation -->
 
-    <rdf:Description rdf:about="https://purl.org/heals/eo#hasPresentation">
+    <owl:ObjectProperty rdf:about="https://purl.org/heals/eo#hasPresentation">
         <rdfs:domain rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/udxai.rdf#generates -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/udxai.rdf#generates">
+        <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
+        <rdfs:range rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+    </owl:ObjectProperty>
     
 
 
@@ -577,521 +585,521 @@
 
     <!-- http://linkedu.eu/dedalo/explanationPattern.owl#Explanation -->
 
-    <rdf:Description rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">
+    <owl:Class rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://semanticscience.org/resource/question -->
 
-    <rdf:Description rdf:about="http://semanticscience.org/resource/question">
+    <owl:Class rdf:about="http://semanticscience.org/resource/question">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Algorithms -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Algorithms">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Algorithms">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Applications -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Applications">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Applications">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Artificial_Neural_Network -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Artificial_Neural_Network">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Artificial_Neural_Network">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#CNTK -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#CNTK">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#CNTK">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Caffe -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Caffe">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Caffe">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Classification -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Classification">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Classification">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#TaskType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Clustering -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Clustering">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Clustering">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#TaskType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Computer_Vision -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Computer_Vision">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Computer_Vision">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Convolutional_Neural_Networks -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Convolutional_Neural_Networks">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Convolutional_Neural_Networks">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Decision_Tree -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Decision_Tree">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Decision_Tree">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Dimensionality_Reduction -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Dimensionality_Reduction">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Dimensionality_Reduction">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#TaskType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Face_recognition -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Face_recognition">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Face_recognition">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Frameworks -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Frameworks">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Frameworks">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Keras -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Keras">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Keras">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Linear_Regression -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Linear_Regression">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Linear_Regression">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Logistic_Regression -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Logistic_Regression">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Logistic_Regression">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#MxNet -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#MxNet">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#MxNet">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Natural_Language_Processing -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Natural_Language_Processing">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Natural_Language_Processing">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Principal_Component_Analysis -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Principal_Component_Analysis">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Principal_Component_Analysis">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#PyTorch -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#PyTorch">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#PyTorch">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Random_Forest -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Random_Forest">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Random_Forest">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Recurrent_Neural_Networks -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Recurrent_Neural_Networks">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Recurrent_Neural_Networks">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Regression -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Regression">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Regression">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#TaskType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Reinforcement_Learning -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Reinforcement_Learning">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Reinforcement_Learning">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ModelType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Semi-supervised_Learning -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Semi-supervised_Learning">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Semi-supervised_Learning">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ModelType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Supervised_Learning -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Supervised_Learning">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Supervised_Learning">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ModelType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Support_Vector_Machine -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Support_Vector_Machine">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Support_Vector_Machine">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#TensorFlow -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#TensorFlow">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#TensorFlow">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Text_Classification -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Text_Classification">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Text_Classification">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Theano -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Theano">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Theano">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#Unsupervised_Learning -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#Unsupervised_Learning">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Unsupervised_Learning">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ModelType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#k-Means -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#k-Means">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#k-Means">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#k-Nearest_Neighbor -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#k-Nearest_Neighbor">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#k-Nearest_Neighbor">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.a2rd.net.br/mlo#scikit-learn -->
 
-    <rdf:Description rdf:about="http://www.a2rd.net.br/mlo#scikit-learn">
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#scikit-learn">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event -->
 
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event">
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
 
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation">
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Audit -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Audit">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Audit">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#CalibrateTrust -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#CalibrateTrust">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#CalibrateTrust">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Contest -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Contest">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Contest">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#DecisionSupport -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#DecisionSupport">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#DecisionSupport">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Discover -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Discover">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Discover">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Improve -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Improve">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Improve">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Justify -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Justify">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Justify">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Persuade -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Persuade">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Persuade">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Smell -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Smell">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Smell">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Tactile -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Tactile">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Tactile">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Taste -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Taste">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Taste">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Visual -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Visual">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Visual">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/exp#Auditory/Speech -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/exp#Auditory/Speech">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/exp#Auditory/Speech">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#BalancedDataset -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#BalancedDataset">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#BalancedDataset">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetBalance"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DatasetBalance -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetBalance">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetBalance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetCharacteristic"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DatasetCharacteristic -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetCharacteristic">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetCharacteristic">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DatasetContainingOutlier -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetContainingOutlier">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetContainingOutlier">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetCharacteristic"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DatasetSize -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetSize">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetSize">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetCharacteristic"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DatasetWithOutlier -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetWithOutlier">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetWithOutlier">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetContainingOutlier"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DatasetWithoutOutlier -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetWithoutOutlier">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#DatasetWithoutOutlier">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetContainingOutlier"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#ImageClassification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ImageClassification">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#ImageClassification">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#LargeDataset -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#LargeDataset">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#LargeDataset">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetSize"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SmallDataset -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SmallDataset">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#SmallDataset">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetSize"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SparkMLLib -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SparkMLLib">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#SparkMLLib">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SpeechRecognition -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SpeechRecognition">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#SpeechRecognition">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#UnbalancedDataset -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#UnbalancedDataset">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#UnbalancedDataset">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetBalance"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#WEKA -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#WEKA">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/ml#WEKA">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1370,33 +1378,33 @@
 
     <!-- http://www.semanticweb.org/rontologies/xai#ArchitectureModification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ArchitectureModification">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ArchitectureModification">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#CounterfactualExplanation -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanation">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanation">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Examples -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Examples">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Examples">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#FunctioningType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#FunctioningType">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#FunctioningType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1410,41 +1418,41 @@
 
     <!-- http://www.semanticweb.org/rontologies/xai#GlobalSurrogateModel -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateModel">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateModel">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ICE -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ICE">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ICE">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Image -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Image">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Image">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#LIME -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#LIME">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#LIME">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#LRP -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#LRP">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#LRP">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1458,145 +1466,145 @@
 
     <!-- http://www.semanticweb.org/rontologies/xai#Meta-Explanation -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Meta-Explanation">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Meta-Explanation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Model -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Model">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Model">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ModelAgnosticStrategy -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ModelAgnosticStrategy">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ModelAgnosticStrategy">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ModelSpecificStrategy -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ModelSpecificStrategy">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#ModelSpecificStrategy">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Numerical -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Numerical">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Numerical">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#OutputFormat -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#OutputFormat">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#OutputFormat">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PDP -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PDP">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#PDP">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportance -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportance">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportance">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Perturbation -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Perturbation">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Perturbation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticism -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticism">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticism">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#SHAP -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#SHAP">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#SHAP">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#StructureLeveraging -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#StructureLeveraging">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#StructureLeveraging">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#FunctioningType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#SurrogateModel -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#SurrogateModel">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#SurrogateModel">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Tabular -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Tabular">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Tabular">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Text -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Text">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Text">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Textual -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Textual">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Textual">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#Visual -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Visual">
+    <owl:Class rdf:about="http://www.semanticweb.org/rontologies/xai#Visual">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rontologies/xai#OutputFormat"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#AISystem -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#AISystem">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#AISystem">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1612,97 +1620,97 @@
 
     <!-- https://ontology.tno.nl/explainability#ExampleBased -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#ExampleBased">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExampleBased">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#ExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#ExplanationAlgorithm">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExplanationAlgorithm">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#ExplanationGoal -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#ExplanationGoal">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExplanationGoal">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#ExplanationType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#ExplanationType">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ExplanationType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#FeatureAttribution -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#FeatureAttribution">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#FeatureAttribution">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#InputData -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#InputData">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#InputData">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#Modality -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#Modality">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#Modality">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#ModelType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#ModelType">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#ModelType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#PostHoc -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#PostHoc">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#PostHoc">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#StrategyType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#StrategyType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#StrategyType">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#StrategyType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#TaskType -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#TaskType">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#TaskType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://ontology.tno.nl/explainability#TransparentByDesign -->
 
-    <rdf:Description rdf:about="https://ontology.tno.nl/explainability#TransparentByDesign">
+    <owl:Class rdf:about="https://ontology.tno.nl/explainability#TransparentByDesign">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#StrategyType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1719,9 +1727,9 @@
 
     <!-- https://purl.org/heals/eo#user -->
 
-    <rdf:Description rdf:about="https://purl.org/heals/eo#user">
+    <owl:Class rdf:about="https://purl.org/heals/eo#user">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1885,329 +1893,329 @@
 
     <!-- http://www.semanticweb.org/ontologies/ml#ArtificialNeuralNetworkAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ArtificialNeuralNetworkAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#ArtificialNeuralNetworkAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Artificial_Neural_Network"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#BalancedData -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#BalancedData">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#BalancedData">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#BalancedDataset"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#CNTKFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#CNTKFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#CNTKFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#CNTK"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#CaffeFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#CaffeFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#CaffeFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Caffe"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#ClassificationTaskType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ClassificationTaskType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#ClassificationTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Classification"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#ClusteringTaskType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ClusteringTaskType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#ClusteringTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Clustering"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#ComputerVisionApplication -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ComputerVisionApplication">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#ComputerVisionApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Computer_Vision"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#ConvolutionalNeuralNetworkAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ConvolutionalNeuralNetworkAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#ConvolutionalNeuralNetworkAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Convolutional_Neural_Networks"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DataWithOutlier -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DataWithOutlier">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#DataWithOutlier">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetWithOutlier"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DataWithoutOutlier -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DataWithoutOutlier">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#DataWithoutOutlier">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#DatasetWithoutOutlier"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DecisionTreeAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DecisionTreeAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#DecisionTreeAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Decision_Tree"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#DimensionalityReductionTaskType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#DimensionalityReductionTaskType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#DimensionalityReductionTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Dimensionality_Reduction"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#FaceRecognitionApplication -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#FaceRecognitionApplication">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#FaceRecognitionApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Face_recognition"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#ImageClassificationApplication -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ImageClassificationApplication">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#ImageClassificationApplication">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#ImageClassification"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#KerasFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#KerasFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#KerasFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Keras"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#LargeData -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#LargeData">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#LargeData">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#LargeDataset"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#LinearRegressionAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#LinearRegressionAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#LinearRegressionAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Linear_Regression"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#LogisticRegressionAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#LogisticRegressionAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#LogisticRegressionAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Logistic_Regression"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#MxNetFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#MxNetFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#MxNetFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#MxNet"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#NaturalLanguageProcessingApplication -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#NaturalLanguageProcessingApplication">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#NaturalLanguageProcessingApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Natural_Language_Processing"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#PrincipalComponentAnalysisAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#PrincipalComponentAnalysisAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#PrincipalComponentAnalysisAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Principal_Component_Analysis"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#PyTorchFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#PyTorchFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#PyTorchFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#PyTorch"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#RandomForestAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#RandomForestAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#RandomForestAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Random_Forest"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#RecurrentNeuralNetworkAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#RecurrentNeuralNetworkAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#RecurrentNeuralNetworkAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Recurrent_Neural_Networks"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#RegressionTaskType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#RegressionTaskType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#RegressionTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Regression"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#ReinforcemntLearningModelType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#ReinforcemntLearningModelType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#ReinforcemntLearningModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Reinforcement_Learning"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#Semi-supervisedModelType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#Semi-supervisedModelType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#Semi-supervisedModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Semi-supervised_Learning"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SmallData -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SmallData">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#SmallData">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#SmallDataset"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SparkMLLibFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SparkMLLibFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#SparkMLLibFramework">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#SparkMLLib"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SpeechRecognitionApplication -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SpeechRecognitionApplication">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#SpeechRecognitionApplication">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#SpeechRecognition"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SupervisedModelType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SupervisedModelType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#SupervisedModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Supervised_Learning"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#SupportVectorMachineAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#SupportVectorMachineAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#SupportVectorMachineAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Support_Vector_Machine"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#TensorFlowFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#TensorFlowFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#TensorFlowFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#TensorFlow"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#TextClassificationApplication -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#TextClassificationApplication">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#TextClassificationApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Text_Classification"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#TheanoFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#TheanoFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#TheanoFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Theano"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#UnbalancedData -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#UnbalancedData">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#UnbalancedData">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#UnbalancedDataset"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#UnsupervisedModelType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#UnsupervisedModelType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#UnsupervisedModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Unsupervised_Learning"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#WEKAFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#WEKAFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#WEKAFramework">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/ml#WEKA"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#k-MeansAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#k-MeansAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#k-MeansAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#k-Means"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#k-NearestNeighborAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#k-NearestNeighborAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#k-NearestNeighborAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#k-Nearest_Neighbor"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/ml#scikit-learnFramework -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/ml#scikit-learnFramework">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/ml#scikit-learnFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#scikit-learn"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
@@ -2757,41 +2765,41 @@ Thank you for your support!</sur:hasText>
 
     <!-- http://www.semanticweb.org/rontologies/xai#ArchitectureModificationFunctioningType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ArchitectureModificationFunctioningType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ArchitectureModificationFunctioningType">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ArchitectureModification"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#CounterfactualExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#CounterfactualExplanation"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ExampleBasedExplanationType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ExampleBasedExplanationType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ExampleBasedExplanationType">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#ExampleBased"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ExamplesFunctioningType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ExamplesFunctioningType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ExamplesFunctioningType">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Examples"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#FeatureAttributionExplanationType">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#FeatureAttribution"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
@@ -2805,48 +2813,48 @@ Thank you for your support!</sur:hasText>
 
     <!-- http://www.semanticweb.org/rontologies/xai#GlobalSurrogateExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#GlobalSurrogateModel"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ICEExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ICEExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ICEExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ICE"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#DecisionTreeAlgorithm"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#LinearRegressionAlgorithm"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#LogisticRegressionAlgorithm"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#k-NearestNeighborAlgorithm"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ImageInputData -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ImageInputData">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ImageInputData">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Image"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#LIMEExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#LIMEExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#LIMEExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#LIME"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#DecisionTreeAlgorithm"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#RandomForestAlgorithm"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#LRPExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#LRPExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#LRPExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#LRP"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#ConvolutionalNeuralNetworkAlgorithm"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
@@ -2860,150 +2868,150 @@ Thank you for your support!</sur:hasText>
 
     <!-- http://www.semanticweb.org/rontologies/xai#Meta-ExplanationFunctioningType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#Meta-ExplanationFunctioningType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#Meta-ExplanationFunctioningType">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Meta-Explanation"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ModelAgnostic -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ModelAgnostic">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ModelAgnostic">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelAgnosticStrategy"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ModelOutputFormat -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ModelOutputFormat">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ModelOutputFormat">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Model"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#ModelSpecific -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#ModelSpecific">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#ModelSpecific">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#ModelSpecificStrategy"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#NumericalOutputFormat">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Numerical"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PDPExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PDPExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PDPExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#PDP"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportanceExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportanceExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportanceExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#PermutationFeatureImportance"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PerturbationFunctioningType">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Perturbation"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PostHoc -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PostHoc">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PostHoc">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticismExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticismExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticismExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#PrototypeAndCriticism"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#ConvolutionalNeuralNetworkAlgorithm"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#RecurrentNeuralNetworkAlgorithm"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#SHAPExplanationAlgorithm -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#SHAPExplanationAlgorithm">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#SHAPExplanationAlgorithm">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#SHAP"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#ConvolutionalNeuralNetworkAlgorithm"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#RandomForestAlgorithm"/>
         <tno:explainsSystem rdf:resource="http://www.semanticweb.org/ontologies/ml#RecurrentNeuralNetworkAlgorithm"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#StructureLeveragingFunctioningType">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#StructureLeveraging"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#SurrogateModelExplanationType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#SurrogateModelExplanationType">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#SurrogateModelExplanationType">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#SurrogateModel"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#TabularInputData -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#TabularInputData">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TabularInputData">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Tabular"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#TextInputData -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#TextInputData">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TextInputData">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Text"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#TextualOutputFormat -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#TextualOutputFormat">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TextualOutputFormat">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Textual"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#TransparentByDesign -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#TransparentByDesign">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#TransparentByDesign">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#TransparentByDesign"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/rontologies/xai#VisualOutputFormat -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rontologies/xai#VisualOutputFormat">
         <rdf:type rdf:resource="http://www.semanticweb.org/rontologies/xai#Visual"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
