@@ -5,21 +5,26 @@
      xmlns:eo="https://purl.org/heals/eo#"
      xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:ex="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/udxai.rdf#"
+     xmlns:ml="http://www.semanticweb.org/ontologies/ml#"
+     xmlns:exp="http://www.semanticweb.org/ontologies/exp#"
      xmlns:mlo="http://www.a2rd.net.br/mlo#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:sur="https://w3id.org/survey-ontology#"
      xmlns:tno="https://ontology.tno.nl/explainability#"
      xmlns:xai="http://www.semanticweb.org/rontologies/xai#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:mlo1="http://www.a2rd.net.br/mlo#mlo:"
+     xmlns:part="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:survey="http://www.semanticweb.org/ontologies/survey#">
+     xmlns:survey="http://www.semanticweb.org/ontologies/survey#"
+     xmlns:situation="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/udxai.rdf"/>
     
 
