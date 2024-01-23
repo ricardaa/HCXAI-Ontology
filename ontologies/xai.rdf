@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#"
-     xml:base="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#"
+     xml:base="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:tno="https://ontology.tno.nl/explainability#"
-     xmlns:xai="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#"
+     xmlns:xai="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf"/>
     
 
 
@@ -147,9 +147,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#hasDecisionBoundary -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#hasDecisionBoundary -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#hasDecisionBoundary">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#hasDecisionBoundary">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
@@ -157,22 +157,22 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#hasFunctioningType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#hasFunctioningType -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#hasFunctioningType">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#hasFunctioningType">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#hasOutputFormat -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#hasOutputFormat -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#hasOutputFormat">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#hasOutputFormat">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
     </owl:ObjectProperty>
     
 
@@ -281,226 +281,226 @@ constituent for its classification.</rdfs:comment>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModification -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModification -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModification">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModification">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanation -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanation -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanation">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanation">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Examples -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Examples -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Examples">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Examples">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalDecisionBoundary -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalDecisionBoundary -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalDecisionBoundary">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalDecisionBoundary">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateModel -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateModel -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateModel">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateModel">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ICE -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ICE -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ICE">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ICE">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Image -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Image -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Image">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Image">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LIME -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LIME -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LIME">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LIME">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LRP -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LRP -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LRP">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LRP">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LocalDecisionBoundary -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LocalDecisionBoundary -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LocalDecisionBoundary">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LocalDecisionBoundary">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#DecisionBoundary"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Meta-Explanation -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Meta-Explanation -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Meta-Explanation">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Meta-Explanation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Model -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Model -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Model">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Model">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnosticStrategy -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnosticStrategy -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnosticStrategy">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnosticStrategy">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelSpecificStrategy -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelSpecificStrategy -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelSpecificStrategy">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelSpecificStrategy">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Numerical -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Numerical -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Numerical">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Numerical">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#OutputFormat -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#OutputFormat -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#OutputFormat">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#OutputFormat">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PDP -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PDP -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PDP">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PDP">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportance -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportance -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportance">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportance">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Perturbation -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Perturbation -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Perturbation">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Perturbation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticism -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticism -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticism">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticism">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SHAP -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SHAP -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SHAP">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SHAP">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationAlgorithm"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveraging -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveraging -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveraging">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveraging">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FunctioningType"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SurrogateModel -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SurrogateModel -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SurrogateModel">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SurrogateModel">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationType"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Tabular -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Tabular -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Tabular">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Tabular">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Text -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Text -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Text">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Text">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#InputData"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Textual -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Textual -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Textual">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Textual">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Visual -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Visual -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Visual">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Visual">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#OutputFormat"/>
     </owl:Class>
     
 
@@ -516,77 +516,77 @@ constituent for its classification.</rdfs:comment>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModificationFunctioningType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModificationFunctioningType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModificationFunctioningType">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModification"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModificationFunctioningType">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ArchitectureModification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanation"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Local"/>
-        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#CounterfactualExplanation"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Local"/>
+        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
         <terms:identifier>https://doi.org/10.48550/arXiv.1711.00399</terms:identifier>
         <terms:source>Wachter, S., Mittelstadt, B., &amp; Russell, C. (2017). Counterfactual explanations without opening the black box: Automated decisions and the GDPR. Harv. JL &amp; Tech., 31, 841.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#ExampleBased"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ExamplesFunctioningType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ExamplesFunctioningType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ExamplesFunctioningType">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Examples"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ExamplesFunctioningType">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Examples"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#FeatureAttribution"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Global -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Global -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Global">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalDecisionBoundary"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Global">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalDecisionBoundary"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateModel"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Global"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#GlobalSurrogateModel"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Global"/>
         <terms:identifier>10.1109/TSMCC.2005.855506</terms:identifier>
         <terms:isPartOf>IEEE</terms:isPartOf>
         <terms:source>Zhou, Z., Ong, Y. S., Nair, P. B., Keane, A. J., &amp; Lum, K. Y. (2006). Combining global and local surrogate models to accelerate evolutionary optimization. IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews), 37(1), 66-76.</terms:source>
@@ -594,17 +594,17 @@ constituent for its classification.</rdfs:comment>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ICEExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ICEExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ICEExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ICE"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Local"/>
-        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ICEExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ICE"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Local"/>
+        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
         <terms:identifier>10.1080/10618600.2014.907095</terms:identifier>
         <terms:isPartOf>Journal of Computational and Graphical Statistics</terms:isPartOf>
         <terms:source>A. Goldstein, A. Kapelner, J. Bleich, and E. Pitkin, ``Peeking inside the
@@ -615,29 +615,29 @@ expectation,&apos;&apos; J. Comput. Graph. Statist., vol. 24, no. 1, pp. 4465,
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ImageInputData -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ImageInputData -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ImageInputData">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Image"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ImageInputData">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Image"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LIMEExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LIMEExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LIMEExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LIME"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Local"/>
-        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelOutputFormat"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LIMEExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LIME"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Local"/>
+        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelOutputFormat"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
         <terms:identifier>http://dx.doi.org/10.1145/2939672.2939778</terms:identifier>
         <terms:isPartOf>22nd ACM SIGKDD international conference on knowledge discovery and data mining</terms:isPartOf>
         <terms:source>Ribeiro, M. T., Singh, S., &amp; Guestrin, C. (2016, August). &quot; Why should i trust you?&quot; Explaining the predictions of any classifier. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining (pp. 1135-1144).</terms:source>
@@ -645,18 +645,18 @@ expectation,&apos;&apos; J. Comput. Graph. Statist., vol. 24, no. 1, pp. 4465,
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LRPExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LRPExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LRPExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LRP"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Local"/>
-        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LRPExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LRP"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Local"/>
+        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
         <terms:identifier>https://doi.org/10.1371/journal.pone.0130140</terms:identifier>
         <terms:isPartOf>PLoS ONE</terms:isPartOf>
         <terms:source>S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and
@@ -667,134 +667,134 @@ p. e0130140, 2015.</terms:source>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Local -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Local -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Local">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#LocalDecisionBoundary"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Local">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#LocalDecisionBoundary"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Meta-ExplanationFunctioningType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Meta-ExplanationFunctioningType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Meta-ExplanationFunctioningType">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Meta-Explanation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Meta-ExplanationFunctioningType">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Meta-Explanation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnosticStrategy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnosticStrategy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelOutputFormat -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelOutputFormat -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelOutputFormat">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Model"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelOutputFormat">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Model"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelSpecific -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelSpecific -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelSpecific">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelSpecificStrategy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelSpecific">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelSpecificStrategy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Numerical"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Numerical"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PDPExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PDPExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PDPExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PDP"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Global"/>
-        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PDPExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PDP"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Global"/>
+        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
         <terms:source>Friedman, J. H. (2001). Greedy function approximation: a gradient boosting machine. Annals of statistics, 1189-1232.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportanceExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportanceExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportanceExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportance"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Global"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportanceExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PermutationFeatureImportance"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#FeatureAttributionExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Global"/>
         <terms:source>Molnar, C., Freiesleben, T., König, G., Herbinger, J., Reisinger, T., Casalicchio, G., ... &amp; Bischl, B. (2023, July). Relating the partial dependence plot and permutation feature importance to the data generating process. In World Conference on Explainable Artificial Intelligence (pp. 456-479). Cham: Springer Nature Switzerland.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Perturbation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Perturbation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#PostHoc"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticismExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticismExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticismExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticism"/>
-        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Global"/>
-        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticismExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PrototypeAndCriticism"/>
+        <tno:hasExplanationType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ExampleBasedExplanationType"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Global"/>
+        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
         <terms:isPartOf>Advances in neural information processing systems</terms:isPartOf>
         <terms:source>Kim, B., Khanna, R., &amp; Koyejo, O. O. (2016). Examples are not enough, learn to criticize! criticism for interpretability. Advances in neural information processing systems, 29.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SHAPExplanationAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SHAPExplanationAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SHAPExplanationAlgorithm">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SHAP"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
-        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
-        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
-        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Local"/>
-        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat"/>
-        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SHAPExplanationAlgorithm">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SHAP"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ImageInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData"/>
+        <tno:hasInputData rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#ModelAgnostic"/>
+        <tno:hasStrategyType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PostHoc"/>
+        <hasDecisionBoundary rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Local"/>
+        <hasFunctioningType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#PerturbationFunctioningType"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#NumericalOutputFormat"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat"/>
+        <hasOutputFormat rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat"/>
         <terms:identifier>https://doi.org/10.1145/3531146.3534639</terms:identifier>
         <terms:isPartOf>Advances in neural information processing  systems</terms:isPartOf>
         <terms:source>Lundberg, S. M., &amp; Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in neural information processing systems, 30.</terms:source>
@@ -802,58 +802,58 @@ p. e0130140, 2015.</terms:source>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#StructureLeveraging"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveragingFunctioningType">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#StructureLeveraging"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#SurrogateModel"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SurrogateModelExplanationType">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#SurrogateModel"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TabularInputData">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Tabular"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TabularInputData">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Tabular"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextInputData">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Text"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextInputData">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Text"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Textual"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TextualOutputFormat">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Textual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TransparentByDesign -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TransparentByDesign -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#TransparentByDesign">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#TransparentByDesign">
         <rdf:type rdf:resource="https://ontology.tno.nl/explainability#TransparentByDesign"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/xai.rdf#Visual"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#VisualOutputFormat">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/xai.rdf#Visual"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

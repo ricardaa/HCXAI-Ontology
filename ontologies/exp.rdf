@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#"
-     xml:base="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#"
+     xml:base="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:eo="https://purl.org/heals/eo#"
      xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
-     xmlns:exp="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#"
+     xmlns:exp="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sio="http://semanticscience.org/resource/"
@@ -16,7 +16,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:situation="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf"/>
     
 
 
@@ -140,9 +140,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#hasAttribute -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#hasAttribute -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#hasAttribute">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#hasAttribute">
         <rdfs:domain rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:range rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:ObjectProperty>
@@ -230,105 +230,105 @@ From the Situation ontology design pattern, which represents contexts or situati
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Audit -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Audit -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Audit">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Audit">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#CalibrateTrust -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#CalibrateTrust -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#CalibrateTrust">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#CalibrateTrust">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Contest -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Contest -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Contest">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Contest">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#DecisionSupport -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#DecisionSupport -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#DecisionSupport">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#DecisionSupport">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Discover -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Discover -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Discover">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Discover">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Improve -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Improve -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Improve">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Improve">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Justify -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Justify -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Justify">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Justify">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Persuade -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Persuade -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Persuade">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Persuade">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#ExplanationGoal"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Smell -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Smell -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Smell">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Smell">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Tactile -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Tactile -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Tactile">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Tactile">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Taste -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Taste -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Taste">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Taste">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Visual -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Visual -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Visual">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Visual">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Auditory/Speech -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Auditory/Speech -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/exp.rdf#Auditory/Speech">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/exp.rdf#Auditory/Speech">
         <rdfs:subClassOf rdf:resource="https://ontology.tno.nl/explainability#Modality"/>
     </owl:Class>
 </rdf:RDF>

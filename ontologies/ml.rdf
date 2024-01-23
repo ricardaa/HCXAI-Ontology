@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#"
-     xml:base="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#"
+     xml:base="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ml="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#"
+     xmlns:ml="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#"
      xmlns:mlo="http://www.a2rd.net.br/mlo#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,7 +13,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf"/>
     
 
 
@@ -162,11 +162,11 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#isCompatibleWith -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#isCompatibleWith -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#isCompatibleWith">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#isCompatibleWith">
         <rdfs:domain rdf:resource="https://ontology.tno.nl/explainability#AISystem"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
     </owl:ObjectProperty>
     
 
@@ -505,27 +505,27 @@ In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel 
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#BalancedDataset -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#BalancedDataset -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#BalancedDataset">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#BalancedDataset">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
         <rdfs:label>Balance of the dataset</rdfs:label>
         <skos:prefLabel>Balance of the dataset</skos:prefLabel>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>Dataset Characteristic</rdfs:label>
         <skos:prefLabel>Dataset Characteristic</skos:prefLabel>
@@ -533,93 +533,93 @@ In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel 
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
         <rdfs:label>Dataset containing outlier</rdfs:label>
         <skos:prefLabel>Dataset containing outlier</skos:prefLabel>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetSize -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetSize -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetSize">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetSize">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetCharacteristic"/>
         <rdfs:label>Size of the dataset</rdfs:label>
         <skos:prefLabel>Size of the dataset</skos:prefLabel>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetWithOutlier -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetWithOutlier -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetWithOutlier">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetWithOutlier">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetWithoutOutlier -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetWithoutOutlier -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetWithoutOutlier">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetWithoutOutlier">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetContainingOutlier"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ImageClassification -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ImageClassification -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ImageClassification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ImageClassification">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LargeDataset -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LargeDataset -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LargeDataset">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetSize"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LargeDataset">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetSize"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SmallDataset -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SmallDataset -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SmallDataset">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetSize"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SmallDataset">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetSize"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLib -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLib -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLib">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLib">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognition -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognition -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognition">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognition">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Applications"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnbalancedDataset -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnbalancedDataset -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnbalancedDataset">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnbalancedDataset">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetBalance"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#WEKA -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#WEKA -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#WEKA">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#WEKA">
         <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Frameworks"/>
     </owl:Class>
     
@@ -636,80 +636,80 @@ In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel 
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ArtificialNeuralNetworkAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ArtificialNeuralNetworkAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ArtificialNeuralNetworkAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ArtificialNeuralNetworkAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Artificial_Neural_Network"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#PyTorchFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#PyTorchFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
         <terms:identifier>https://doi.org/10.1016/S0731-7085(99)00272-1</terms:identifier>
         <terms:source>Agatonovic-Kustrin, S., &amp; Beresford, R. (2000). Basic concepts of artificial neural network (ANN) modeling and its application in pharmaceutical research. Journal of pharmaceutical and biomedical analysis, 22(5), 717-727.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#BalancedData -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#BalancedData -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#BalancedData">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#BalancedDataset"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#BalancedData">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#BalancedDataset"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#CNTK"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#CaffeFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#CaffeFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#CaffeFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#CaffeFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Caffe"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClusteringTaskType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClusteringTaskType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClusteringTaskType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClusteringTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Clustering"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ComputerVisionApplication -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ComputerVisionApplication -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ComputerVisionApplication">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ComputerVisionApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Computer_Vision"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Convolutional_Neural_Networks"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#CaffeFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#KerasFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#CaffeFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#KerasFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
         <terms:identifier>10.1109/ICEngTechnol.2017.8308186</terms:identifier>
         <terms:isPartOf>IEEE</terms:isPartOf>
         <terms:source>Albawi, S., Mohammed, T. A., &amp; Al-Zawi, S. (2017, August). Understanding of a convolutional neural network. In 2017 international conference on engineering and technology (ICET) (pp. 1-6). Ieee.</terms:source>
@@ -717,33 +717,33 @@ In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel 
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetWithOutlier"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetWithOutlier"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithoutOutlier -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithoutOutlier -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithoutOutlier">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DatasetWithoutOutlier"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithoutOutlier">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DatasetWithoutOutlier"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Decision_Tree"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#BalancedData"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#BalancedData"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier"/>
         <terms:identifier>10.1109/TSMCC.2004.843247</terms:identifier>
         <terms:isPartOf>IEEE</terms:isPartOf>
         <terms:source>Rokach, L., &amp; Maimon, O. (2005). Top-down induction of decision trees classifiers-a survey. IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews), 35(4), 476-487.</terms:source>
@@ -751,299 +751,299 @@ In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel 
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DimensionalityReductionTaskType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DimensionalityReductionTaskType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DimensionalityReductionTaskType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DimensionalityReductionTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Dimensionality_Reduction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#FaceRecognitionApplication -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#FaceRecognitionApplication -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#FaceRecognitionApplication">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#FaceRecognitionApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Face_recognition"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ImageClassificationApplication -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ImageClassificationApplication -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ImageClassificationApplication">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ImageClassification"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ImageClassificationApplication">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ImageClassification"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#KerasFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#KerasFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#KerasFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#KerasFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Keras"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LargeData -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LargeData -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LargeData">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LargeDataset"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LargeData">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LargeDataset"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LinearRegressionAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LinearRegressionAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LinearRegressionAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LinearRegressionAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Linear_Regression"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SmallData"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SmallData"/>
         <terms:source>Montgomery, D. C., Peck, E. A., &amp; Vining, G. G. (2021). Introduction to linear regression analysis. John Wiley &amp; Sons.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LogisticRegressionAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LogisticRegressionAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#LogisticRegressionAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#LogisticRegressionAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Logistic_Regression"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
         <terms:source>Hosmer Jr, D. W., Lemeshow, S., &amp; Sturdivant, R. X. (2013). Applied logistic regression (Vol. 398). John Wiley &amp; Sons.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#MxNet"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#NaturalLanguageProcessingApplication -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#NaturalLanguageProcessingApplication -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#NaturalLanguageProcessingApplication">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#NaturalLanguageProcessingApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Natural_Language_Processing"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#PrincipalComponentAnalysisAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#PrincipalComponentAnalysisAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#PrincipalComponentAnalysisAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#PrincipalComponentAnalysisAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Principal_Component_Analysis"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DimensionalityReductionTaskType"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DimensionalityReductionTaskType"/>
         <terms:identifier>https://doi.org/10.1007/978-3-030-03243-2_649-1</terms:identifier>
         <terms:source>Kurita, T. (2019). Principal component analysis (PCA). Computer Vision: A Reference Guide, 1-4.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#PyTorchFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#PyTorchFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#PyTorchFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#PyTorchFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#PyTorch"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Random_Forest"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData"/>
         <terms:identifier>https://doi.org/10.1023/A:1010933404324</terms:identifier>
         <terms:source>Breiman, L. (2001). Random forests. Machine learning, 45, 5-32.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Recurrent_Neural_Networks"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#KerasFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#CNTKFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#KerasFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#MxNetFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
         <terms:identifier>https://doi.org/10.1016/j.physd.2019.132306</terms:identifier>
         <terms:source>Sherstinsky, A. (2020). Fundamentals of recurrent neural network (RNN) and long short-term memory (LSTM) network. Physica D: Nonlinear Phenomena, 404, 132306.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Regression"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithoutOutlier"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithoutOutlier"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ReinforcemntLearningModelType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ReinforcemntLearningModelType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ReinforcemntLearningModelType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ReinforcemntLearningModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Reinforcement_Learning"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#Semi-supervisedModelType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#Semi-supervisedModelType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#Semi-supervisedModelType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#Semi-supervisedModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Semi-supervised_Learning"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SmallData -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SmallData -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SmallData">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SmallDataset"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SmallData">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SmallDataset"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLib"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLib"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognitionApplication -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognitionApplication -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognitionApplication">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognition"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognitionApplication">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SpeechRecognition"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Supervised_Learning"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupportVectorMachineAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupportVectorMachineAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupportVectorMachineAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupportVectorMachineAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Support_Vector_Machine"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
         <terms:identifier>https://doi.org/10.1038/nbt1206-1565</terms:identifier>
         <terms:source>Noble, W. S. (2006). What is a support vector machine?. Nature biotechnology, 24(12), 1565-1567.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TensorFlowFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#TensorFlow"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TextClassificationApplication -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TextClassificationApplication -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TextClassificationApplication">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TextClassificationApplication">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Text_Classification"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm"/>
-        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ConvolutionalNeuralNetworkAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DecisionTreeAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RandomForestAlgorithm"/>
+        <mlo:canBeSolvedBy rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RecurrentNeuralNetworkAlgorithm"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#TheanoFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Theano"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnbalancedDataset"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnbalancedData">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnbalancedDataset"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnsupervisedModelType -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnsupervisedModelType -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnsupervisedModelType">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnsupervisedModelType">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Unsupervised_Learning"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#WEKA"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#WEKAFramework">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#WEKA"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#k-MeansAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#k-MeansAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#k-MeansAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#k-MeansAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#k-Means"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
-        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#UnsupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClusteringTaskType"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SparkMLLibFramework"/>
+        <mlo:worksFor rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#UnsupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClusteringTaskType"/>
         <terms:identifier>https://doi.org/10.1016/S0031-3203(02)00060-2</terms:identifier>
         <terms:source>Likas, A., Vlassis, N., &amp; Verbeek, J. J. (2003). The global k-means clustering algorithm. Pattern recognition, 36(2), 451-461.</terms:source>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#k-NearestNeighborAlgorithm -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#k-NearestNeighborAlgorithm -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#k-NearestNeighborAlgorithm">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#k-NearestNeighborAlgorithm">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#k-Nearest_Neighbor"/>
-        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
-        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#BalancedData"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier"/>
-        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#SmallData"/>
+        <tno:hasModelType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SupervisedModelType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#ClassificationTaskType"/>
+        <tno:hasTaskType rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#RegressionTaskType"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#BalancedData"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#DataWithOutlier"/>
+        <isCompatibleWith rdf:resource="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#SmallData"/>
         <terms:identifier>10.1109/ICNN.1996.549118</terms:identifier>
         <terms:isPartOf>IEEE</terms:isPartOf>
         <terms:source>Laaksonen, J., &amp; Oja, E. (1996, June). Classification with learning k-nearest neighbors. In Proceedings of international conference on neural networks (ICNN&apos;96) (Vol. 3, pp. 1480-1483). IEEE.</terms:source>
@@ -1051,9 +1051,9 @@ In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel 
     
 
 
-    <!-- https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework -->
+    <!-- https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/UDXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/ricardaa/HCXAI-Ontology/main/ontologies/ml.rdf#scikit-learnFramework">
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#scikit-learn"/>
     </owl:NamedIndividual>
 </rdf:RDF>
